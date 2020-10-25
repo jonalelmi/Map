@@ -1,0 +1,21 @@
+---
+title: "Map"
+author: "Jona Lelmi"
+date: "25/10/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## October 25, 2020
+### Map - Rome
+
+```{r, echo=FALSE}
+library(leaflet)
+mappa <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lat = 41.9109, lng=12.4818)
+mappa
+```
